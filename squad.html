@@ -3,7 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Squad</title>
+    <style>
+      body {
+        background-image: url("./images/background.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+    <link rel="icon" type="image/png" href="./images/acs aro mcm.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body class="min-h-screen flex flex-col items-center justify-center">
+    <a href="#" onclick="window.location.href = 'index.html'">
+      <button class="absolute top-4 left-4 p-2 rounded-full">
+        <img src="./images/acs aro mcm.png" alt="homepage" class="w-6 h-8" />
+      </button>
+    </a>
+    <div class="w-full max-w-md px-4">
+      <div class="flex justify-center mb-8">
+        <span class="text-lg font-bold">Squad</span>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <a
+          href="#"
+          onclick="window.location.href = 'defenders.html'"
+          class="w-full"
+        >
+          <button
+            class="bg-green-500 text-black text-center py-4 rounded-lg shadow-md w-full"
+          >
+            Defenders
+          </button>
+        </a>
+        <a
+          href="#"
+          onclick="window.location.href = 'midfielders.html'"
+          class="w-full"
+        >
+          <button
+            class="bg-yellow-500 text-black text-center py-4 rounded-lg shadow-md w-full"
+          >
+            Midfielders
+          </button>
+        </a>
+        <a
+          href="#"
+          onclick="window.location.href = 'forwards.html'"
+          class="w-full"
+        >
+          <button
+            class="bg-red-500 text-black text-center py-4 rounded-lg shadow-md w-full"
+          >
+            Forwards
+          </button>
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
