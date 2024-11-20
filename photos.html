@@ -3,25 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>Photos</title>
     <style>
       body {
         background-image: url("./images/background.jpg");
         background-size: cover;
         background-position: center;
       }
+      .images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .image img {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+      }
     </style>
     <link rel="icon" type="image/png" href="./images/acs aro mcm.png" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <a href="#" onclick="window.location.href = 'index.html'"
-      ><button class="absolute top-4 left-4 p-2 rounded-full">
-        <img
-          src="./images/acs aro mcm.png"
-          alt="homepage"
-          class="w-6 h-8"
-        /></button
-    ></a>
+    <a href="#" onclick="window.location.href = 'index.html'">
+      <button class="absolute top-4 left-4 p-2 rounded-full">
+        <img src="./images/acs aro mcm.png" alt="homepage" class="w-6 h-8" />
+      </button>
+    </a>
+    <div class="w-full max-w-md px-4">
+      <div class="flex justify-center mt-8">
+        <span class="text-lg font-bold">Photos</span>
+      </div>
+      <br />
+      <div class="images">
+        <div class="image">
+          <img src="./images/img1.jpg" alt="Image1" />
+        </div>
+        <div class="image">
+          <img src="./images/img2.jpg" alt="Image2" />
+        </div>
+        <div class="image">
+          <img src="./images/img3.jpg" alt="Image3" />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
