@@ -9,19 +9,76 @@
         background-image: url("./images/background.jpg");
         background-size: cover;
         background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .card {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        margin: 10px;
+        width: 300px;
+      }
+      .title {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 0.65em;
+        max-width: 300px;
+        color: black;
+        margin: 10px 0;
       }
     </style>
     <link rel="icon" type="image/png" href="./images/acs aro mcm.png" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <a href="#" onclick="window.location.href = 'index.html'"
-      ><button class="absolute top-4 left-4 p-2 rounded-full">
-        <img
-          src="./images/acs aro mcm.png"
-          alt="homepage"
-          class="w-6 h-8"
-        /></button
-    ></a>
+    <a href="#" onclick="window.location.href = 'index.html'">
+      <button class="absolute top-4 left-4 p-2 rounded-full">
+        <img src="./images/acs aro mcm.png" alt="homepage" class="w-6 h-8" />
+      </button>
+    </a>
+    <div class="container">
+      <div class="text-center mt-8">
+        <span class="text-lg font-bold">About Us</span>
+      </div>
+      <br />
+      <p>
+        Origine: Clubul a fost asociat cu fabrica ARO, producătorul de mașini de
+        teren din Câmpulung, care a fost o emblemă locală.
+      </p>
+      <p>
+        Nivel competițional: Echipa a activat în general în ligile inferioare
+        ale fotbalului românesc, precum Liga a III-a sau Liga a IV-a.
+      </p>
+      <p>Stadion: Joacă pe Stadionul Municipal din Câmpulung Muscel.</p>
+      <p>Culori: Tradițional, culorile echipei au fost albastru și alb.</p>
+      <br />
+      <div class="card">
+        <div class="title">Telefon</div>
+        <div>0745228481</div>
+      </div>
+      <div class="card">
+        <div class="title">Adresa</div>
+        <div>
+          str. Nicolae Iorga, nr. 21, bl. A40, sc. A, ap. 7, et 2, Câmpulung
+          Muscel, jud. Arges
+        </div>
+      </div>
+    </div>
   </body>
 </html>
