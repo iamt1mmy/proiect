@@ -3,73 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ACS ARO MUSCELUL CAMPULUNG MUSCEL</title>
+    <title>Midfielders</title>
     <style>
       body {
         background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBUQEBAVFRUPDxUVFRUPFRUVFQ8VFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0NDysZFRkrKy0rKy0rKzc3NzctNy0rLS0tLTc3Ny0tNy0tLTc3NzctKy0tKy0rLSstKy0rLS0tLf/AABEIAMABBwMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAHxABAQEAAgMBAQEBAAAAAAAAAAERAgMSE1EEFCGB/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwX/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARIRAv/aAAwDAQACEQMRAD8A+n6er/P9jedE+Dpbx4/mPW9+qwn54udE+NsXxjpmOeqwn558VOifHRh4uU1XP/PPh/zz46CkXMTVYfzT4J+afHTAZhquafnnw/5p8dGGZhqub+afBPzT46gZhquf+efBeiOgGYarn9AvRG9K05Dtc/onwr0z43FTkXtc96IXojfSZ5F7WHogn543NORe1z380R/LNdWlach2ua/mhz80+N/IeSci9rm5flib+SOvyPTMNVw/yQuX458d4xcw3Xlcvwz4T1bwCYi7rk6o6Iz641kXzE904viUVHVzUacVIqHhGciokYrB4gR4eHIBYShQLAAgVKxRWoqcLFjGVZ+J+KqEVOFiyRUXiV4rCDLCxrU2Cs7AvB4gmVUwvErqjSQM4DqcTwjScU9bVfKeikVIDjpGDkOQRSoQVSgEDAAzAJJVGAnDM5EVGCxQxAoVGCoqQomWiGHDkQRhNMGHDrPBi8KiosLFJoEAYJ0ChFR18m8jHjG8rfln0ZwjjpGDkPAcEGDFQ1EeJ4rFYCD8VYMERYIssRUlTwkCoVhWJVRalp4leLNaSDJA1ROgFaEgDpYNCKVhXipNBF4liqmoowEaKng1jLrax18sejipEq1uMmpJxUUcTqpQVDKHBAYAhWFTpSIpFqsK8EVJzifiIilYlYRWeF4tBiDLBjUqis/EY0SCSqrCqKnSpiQVCa18SxBngXQKz6mqOtpa6Rj0ZxMVI3GVSHRIeCFIuQSKVBIeCQ8AAYQAjkPECxNWmxKqQdTyRRo0pAyo0aRgNKqw/EVEPD8TxBGBQBnYmcWhVOKyolXYm8UVN5BXgAR1T/GmI6mrrGKnFcS041GVSLkLjGkVCh4chiJ41afFcgEnFgEyGacRQWHeJYgmxOLCNI8S8V6EEXifioAWEdMEnplUVIvFWAE4WGXkA/4mxZVFRhihFYdTRh1cm2txn0cXOLPWvCtRmqkXEqjSKhlFCDQcAAGIBUKCCBigiokKxZYCcF4qwIqMKKsLAIqrBiKkarABYMMQE3iWLwhUWDFFgJsBhBw9LWMOit4sWq4xpIji24tRmnxjSREXFZM8A1UGGIYAyMQQEKiigBAgKNFLQNCBYBgkFCdVhXigRHheIolHkPEeAHORWnhAkKTRUg8JBwdLojn/ADurjxIvpXGK48ixXGNMNIqVBxpF6NScEVDSYGNIAoEYEDJAAGKRkEBRgADBgAFSsOkKBpDEBpGmigqdTQAICuLo4uri5+qunjWfK+jVCGtsGqIVqoeiUhAaSjUSjyOnF6WolPTpxcovJGinTi/IagadOLlPWei1Bpo1no1Rppam8k2oNNLUaNFXo1OiVBWlqdK8kFaLUXkXkKrQnSvIijlQx7OYOnGXTXRxrz+nudPHuc/Pp09eXVKqVzzuOdzpqOeXRpuf3H7l1DNbjWHuL3Goma6CYe4e5NRc1vo1z+0XuNGa309c/uOdxqGW41j7S9xqGa209c97h7TUM1tpyubl2j2mjLp0a5vePcahmujVRz+453w1DNdGkx9qfcahmt6TH3D2JqGa1pMvaL2pqLmtaiovYz5diX0uafZTc/Z3Bi+m55r/2Q==");
         background-size: cover;
         background-position: center;
       }
-      .text-container {
-        background-color: black;
-        color: white;
-        padding: 8px 16px;
-        border-radius: 4px;
-        text-align: center;
-        white-space: nowrap;
+      .header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .players {
+        display: grid;
+        grid-template-columns: repeat(2, 130px);
+        grid-gap: 20px;
+        justify-content: center;
+      }
+      .player {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        height: 150px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .player img {
+        width: 80px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
       }
     </style>
     <link rel="icon" type="image/png" href="./assets/acs%20aro%20mcm-D3YswN3q.png" />
-    <script type="module" crossorigin src="./assets/index-BvyHjgUL.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Dax5WAcZ.css">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-
-  <body>
-    <div class="min-h-screen flex flex-col">
-      <nav class="flex justify-center space-x-3 py-4">
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'login.html'"
-        >
-          Log In
-        </a>
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'squad.html'"
-        >
-          Squad
-        </a>
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'shedule.html'"
-        >
-          Shedule
-        </a>
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'photos.html'"
-        >
-          Photos
-        </a>
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'aboutus.html'"
-        >
-          About Us
-        </a>
-      </nav>
-      <div class="flex flex-col items-center justify-center flex-grow">
-        <img
-          src="./assets/acs%20aro%20mcm-D3YswN3q.png"
-          alt="ACS ARO MUSCELUL CAMPULUNG MUSCEL"
-          class="w-48 h-auto mb-4"
-        />
-        <div class="text-container">ACS ARO MUSCELUL CAMPULUNG MUSCEL</div>
+  <body class="min-h-screen flex flex-col items-center justify-center">
+    <a href="#" onclick="window.location.href = 'index.html'">
+      <button class="absolute top-4 left-4 p-2 rounded-full">
+        <img src="./assets/acs%20aro%20mcm-D3YswN3q.png" alt="homepage" class="w-6 h-8" />
+      </button>
+    </a>
+    <div class="w-full max-w-md px-4">
+      <div class="flex justify-center mb-8">
+        <span class="text-lg font-bold">Midfielders</span>
+      </div>
+      <div class="players">
+        <div class="player">
+          <img src="./assets/mid1-DqzmyWym.jpg" alt="Player1" />
+          <div>Gabriel Jenaru</div>
+        </div>
+        <div class="player">
+          <img src="./assets/mid2-COLbmrRS.jpg" alt="Player2" />
+          <div>Mario Durdun</div>
+        </div>
+        <div class="player">
+          <img src="./assets/mid3-CcVkgMEX.jpg" alt="Player3" />
+          <div>Denis Pia</div>
+        </div>
+        <div class="player">
+          <img src="./assets/mid4-D8AjMIs8.jpg" alt="Player4" />
+          <div>Darius Serban</div>
+        </div>
       </div>
     </div>
   </body>

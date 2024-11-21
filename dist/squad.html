@@ -3,73 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ACS ARO MUSCELUL CAMPULUNG MUSCEL</title>
+    <title>Squad</title>
     <style>
       body {
         background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBUQEBAVFRUPDxUVFRUPFRUVFQ8VFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0NDysZFRkrKy0rKy0rKzc3NzctNy0rLS0tLTc3Ny0tNy0tLTc3NzctKy0tKy0rLSstKy0rLS0tLf/AABEIAMABBwMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAHxABAQEAAgMBAQEBAAAAAAAAAAERAgMSE1EEFCGB/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwX/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARIRAv/aAAwDAQACEQMRAD8A+n6er/P9jedE+Dpbx4/mPW9+qwn54udE+NsXxjpmOeqwn558VOifHRh4uU1XP/PPh/zz46CkXMTVYfzT4J+afHTAZhquafnnw/5p8dGGZhqub+afBPzT46gZhquf+efBeiOgGYarn9AvRG9K05Dtc/onwr0z43FTkXtc96IXojfSZ5F7WHogn543NORe1z380R/LNdWlach2ua/mhz80+N/IeSci9rm5flib+SOvyPTMNVw/yQuX458d4xcw3Xlcvwz4T1bwCYi7rk6o6Iz641kXzE904viUVHVzUacVIqHhGciokYrB4gR4eHIBYShQLAAgVKxRWoqcLFjGVZ+J+KqEVOFiyRUXiV4rCDLCxrU2Cs7AvB4gmVUwvErqjSQM4DqcTwjScU9bVfKeikVIDjpGDkOQRSoQVSgEDAAzAJJVGAnDM5EVGCxQxAoVGCoqQomWiGHDkQRhNMGHDrPBi8KiosLFJoEAYJ0ChFR18m8jHjG8rfln0ZwjjpGDkPAcEGDFQ1EeJ4rFYCD8VYMERYIssRUlTwkCoVhWJVRalp4leLNaSDJA1ROgFaEgDpYNCKVhXipNBF4liqmoowEaKng1jLrax18sejipEq1uMmpJxUUcTqpQVDKHBAYAhWFTpSIpFqsK8EVJzifiIilYlYRWeF4tBiDLBjUqis/EY0SCSqrCqKnSpiQVCa18SxBngXQKz6mqOtpa6Rj0ZxMVI3GVSHRIeCFIuQSKVBIeCQ8AAYQAjkPECxNWmxKqQdTyRRo0pAyo0aRgNKqw/EVEPD8TxBGBQBnYmcWhVOKyolXYm8UVN5BXgAR1T/GmI6mrrGKnFcS041GVSLkLjGkVCh4chiJ41afFcgEnFgEyGacRQWHeJYgmxOLCNI8S8V6EEXifioAWEdMEnplUVIvFWAE4WGXkA/4mxZVFRhihFYdTRh1cm2txn0cXOLPWvCtRmqkXEqjSKhlFCDQcAAGIBUKCCBigiokKxZYCcF4qwIqMKKsLAIqrBiKkarABYMMQE3iWLwhUWDFFgJsBhBw9LWMOit4sWq4xpIji24tRmnxjSREXFZM8A1UGGIYAyMQQEKiigBAgKNFLQNCBYBgkFCdVhXigRHheIolHkPEeAHORWnhAkKTRUg8JBwdLojn/ADurjxIvpXGK48ixXGNMNIqVBxpF6NScEVDSYGNIAoEYEDJAAGKRkEBRgADBgAFSsOkKBpDEBpGmigqdTQAICuLo4uri5+qunjWfK+jVCGtsGqIVqoeiUhAaSjUSjyOnF6WolPTpxcovJGinTi/IagadOLlPWei1Bpo1no1Rppam8k2oNNLUaNFXo1OiVBWlqdK8kFaLUXkXkKrQnSvIijlQx7OYOnGXTXRxrz+nudPHuc/Pp09eXVKqVzzuOdzpqOeXRpuf3H7l1DNbjWHuL3Goma6CYe4e5NRc1vo1z+0XuNGa309c/uOdxqGW41j7S9xqGa209c97h7TUM1tpyubl2j2mjLp0a5vePcahmujVRz+453w1DNdGkx9qfcahmt6TH3D2JqGa1pMvaL2pqLmtaiovYz5diX0uafZTc/Z3Bi+m55r/2Q==");
         background-size: cover;
         background-position: center;
       }
-      .text-container {
-        background-color: black;
-        color: white;
-        padding: 8px 16px;
-        border-radius: 4px;
-        text-align: center;
-        white-space: nowrap;
+      .slide-in-bck-tr {
+        animation: slide-in-bck-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+      .slide-in-bck-tl {
+        animation: slide-in-bck-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+      @keyframes slide-in-bck-tr {
+        0% {
+          transform: translateZ(600px) translateX(300px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateZ(0) translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-bck-tl {
+        0% {
+          transform: translateZ(600px) translateX(-300px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateZ(0) translateX(0);
+          opacity: 1;
+        }
       }
     </style>
     <link rel="icon" type="image/png" href="./assets/acs%20aro%20mcm-D3YswN3q.png" />
-    <script type="module" crossorigin src="./assets/index-BvyHjgUL.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Dax5WAcZ.css">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-
-  <body>
-    <div class="min-h-screen flex flex-col">
-      <nav class="flex justify-center space-x-3 py-4">
+  <body class="min-h-screen flex flex-col items-center justify-center">
+    <a href="#" onclick="window.location.href = 'index.html'">
+      <button class="absolute top-4 left-4 p-2 rounded-full">
+        <img src="./assets/acs%20aro%20mcm-D3YswN3q.png" alt="homepage" class="w-6 h-8" />
+      </button>
+    </a>
+    <div class="w-full max-w-md px-4">
+      <div class="flex justify-center mb-8">
+        <span class="text-lg font-bold">Squad</span>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
         <a
           href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'login.html'"
+          onclick="window.location.href = 'defenders.html'"
+          class="w-full"
         >
-          Log In
+          <button
+            class="bg-green-500 text-black text-center py-4 rounded-lg shadow-md w-full slide-in-bck-tr"
+          >
+            Defenders
+          </button>
         </a>
         <a
           href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'squad.html'"
+          onclick="window.location.href = 'midfielders.html'"
+          class="w-full"
         >
-          Squad
+          <button
+            class="bg-yellow-500 text-black text-center py-4 rounded-lg shadow-md w-full slide-in-bck-tl"
+          >
+            Midfielders
+          </button>
         </a>
         <a
           href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'shedule.html'"
+          onclick="window.location.href = 'forwards.html'"
+          class="w-full"
         >
-          Shedule
+          <button
+            class="bg-red-500 text-black text-center py-4 rounded-lg shadow-md w-full slide-in-bck-tr"
+          >
+            Forwards
+          </button>
         </a>
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'photos.html'"
-        >
-          Photos
-        </a>
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'aboutus.html'"
-        >
-          About Us
-        </a>
-      </nav>
-      <div class="flex flex-col items-center justify-center flex-grow">
-        <img
-          src="./assets/acs%20aro%20mcm-D3YswN3q.png"
-          alt="ACS ARO MUSCELUL CAMPULUNG MUSCEL"
-          class="w-48 h-auto mb-4"
-        />
-        <div class="text-container">ACS ARO MUSCELUL CAMPULUNG MUSCEL</div>
       </div>
     </div>
   </body>

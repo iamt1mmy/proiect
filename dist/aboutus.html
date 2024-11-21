@@ -3,73 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ACS ARO MUSCELUL CAMPULUNG MUSCEL</title>
+    <title>About Us</title>
     <style>
       body {
         background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBUQEBAVFRUPDxUVFRUPFRUVFQ8VFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0NDysZFRkrKy0rKy0rKzc3NzctNy0rLS0tLTc3Ny0tNy0tLTc3NzctKy0tKy0rLSstKy0rLS0tLf/AABEIAMABBwMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAHxABAQEAAgMBAQEBAAAAAAAAAAERAgMSE1EEFCGB/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwX/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARIRAv/aAAwDAQACEQMRAD8A+n6er/P9jedE+Dpbx4/mPW9+qwn54udE+NsXxjpmOeqwn558VOifHRh4uU1XP/PPh/zz46CkXMTVYfzT4J+afHTAZhquafnnw/5p8dGGZhqub+afBPzT46gZhquf+efBeiOgGYarn9AvRG9K05Dtc/onwr0z43FTkXtc96IXojfSZ5F7WHogn543NORe1z380R/LNdWlach2ua/mhz80+N/IeSci9rm5flib+SOvyPTMNVw/yQuX458d4xcw3Xlcvwz4T1bwCYi7rk6o6Iz641kXzE904viUVHVzUacVIqHhGciokYrB4gR4eHIBYShQLAAgVKxRWoqcLFjGVZ+J+KqEVOFiyRUXiV4rCDLCxrU2Cs7AvB4gmVUwvErqjSQM4DqcTwjScU9bVfKeikVIDjpGDkOQRSoQVSgEDAAzAJJVGAnDM5EVGCxQxAoVGCoqQomWiGHDkQRhNMGHDrPBi8KiosLFJoEAYJ0ChFR18m8jHjG8rfln0ZwjjpGDkPAcEGDFQ1EeJ4rFYCD8VYMERYIssRUlTwkCoVhWJVRalp4leLNaSDJA1ROgFaEgDpYNCKVhXipNBF4liqmoowEaKng1jLrax18sejipEq1uMmpJxUUcTqpQVDKHBAYAhWFTpSIpFqsK8EVJzifiIilYlYRWeF4tBiDLBjUqis/EY0SCSqrCqKnSpiQVCa18SxBngXQKz6mqOtpa6Rj0ZxMVI3GVSHRIeCFIuQSKVBIeCQ8AAYQAjkPECxNWmxKqQdTyRRo0pAyo0aRgNKqw/EVEPD8TxBGBQBnYmcWhVOKyolXYm8UVN5BXgAR1T/GmI6mrrGKnFcS041GVSLkLjGkVCh4chiJ41afFcgEnFgEyGacRQWHeJYgmxOLCNI8S8V6EEXifioAWEdMEnplUVIvFWAE4WGXkA/4mxZVFRhihFYdTRh1cm2txn0cXOLPWvCtRmqkXEqjSKhlFCDQcAAGIBUKCCBigiokKxZYCcF4qwIqMKKsLAIqrBiKkarABYMMQE3iWLwhUWDFFgJsBhBw9LWMOit4sWq4xpIji24tRmnxjSREXFZM8A1UGGIYAyMQQEKiigBAgKNFLQNCBYBgkFCdVhXigRHheIolHkPEeAHORWnhAkKTRUg8JBwdLojn/ADurjxIvpXGK48ixXGNMNIqVBxpF6NScEVDSYGNIAoEYEDJAAGKRkEBRgADBgAFSsOkKBpDEBpGmigqdTQAICuLo4uri5+qunjWfK+jVCGtsGqIVqoeiUhAaSjUSjyOnF6WolPTpxcovJGinTi/IagadOLlPWei1Bpo1no1Rppam8k2oNNLUaNFXo1OiVBWlqdK8kFaLUXkXkKrQnSvIijlQx7OYOnGXTXRxrz+nudPHuc/Pp09eXVKqVzzuOdzpqOeXRpuf3H7l1DNbjWHuL3Goma6CYe4e5NRc1vo1z+0XuNGa309c/uOdxqGW41j7S9xqGa209c97h7TUM1tpyubl2j2mjLp0a5vePcahmujVRz+453w1DNdGkx9qfcahmt6TH3D2JqGa1pMvaL2pqLmtaiovYz5diX0uafZTc/Z3Bi+m55r/2Q==");
         background-size: cover;
         background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
       }
-      .text-container {
-        background-color: black;
-        color: white;
-        padding: 8px 16px;
-        border-radius: 4px;
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        white-space: nowrap;
+      }
+      .card {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        margin: 10px;
+        width: 300px;
+      }
+      .title {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 0.65em;
+        max-width: 300px;
+        color: black;
+        margin: 10px 0;
       }
     </style>
     <link rel="icon" type="image/png" href="./assets/acs%20aro%20mcm-D3YswN3q.png" />
-    <script type="module" crossorigin src="./assets/index-BvyHjgUL.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Dax5WAcZ.css">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-
   <body>
-    <div class="min-h-screen flex flex-col">
-      <nav class="flex justify-center space-x-3 py-4">
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'login.html'"
-        >
-          Log In
-        </a>
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'squad.html'"
-        >
-          Squad
-        </a>
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'shedule.html'"
-        >
-          Shedule
-        </a>
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'photos.html'"
-        >
-          Photos
-        </a>
-        <a
-          href="#"
-          class="text-blue-600 hover:underline"
-          onclick="window.location.href = 'aboutus.html'"
-        >
-          About Us
-        </a>
-      </nav>
-      <div class="flex flex-col items-center justify-center flex-grow">
-        <img
-          src="./assets/acs%20aro%20mcm-D3YswN3q.png"
-          alt="ACS ARO MUSCELUL CAMPULUNG MUSCEL"
-          class="w-48 h-auto mb-4"
-        />
-        <div class="text-container">ACS ARO MUSCELUL CAMPULUNG MUSCEL</div>
+    <a href="#" onclick="window.location.href = 'index.html'">
+      <button class="absolute top-4 left-4 p-2 rounded-full">
+        <img src="./assets/acs%20aro%20mcm-D3YswN3q.png" alt="homepage" class="w-6 h-8" />
+      </button>
+    </a>
+    <div class="container">
+      <div class="text-center mt-8">
+        <span class="text-lg font-bold">About Us</span>
+      </div>
+      <br />
+      <p>
+        Origine: Clubul a fost asociat cu fabrica ARO, producătorul de mașini de
+        teren din Câmpulung, care a fost o emblemă locală.
+      </p>
+      <p>
+        Nivel competițional: Echipa a activat în general în ligile inferioare
+        ale fotbalului românesc, precum Liga a III-a sau Liga a IV-a.
+      </p>
+      <p>Stadion: Joacă pe Stadionul Municipal din Câmpulung Muscel.</p>
+      <p>Culori: Tradițional, culorile echipei au fost albastru și alb.</p>
+      <br />
+      <div class="card">
+        <div class="title">Telefon</div>
+        <div>0745228481</div>
+      </div>
+      <div class="card">
+        <div class="title">Adresa</div>
+        <div>
+          str. Nicolae Iorga, nr. 21, bl. A40, sc. A, ap. 7, et 2, Câmpulung
+          Muscel, jud. Arges
+        </div>
       </div>
     </div>
   </body>
