@@ -9,6 +9,11 @@
         background-image: url("./images/background.jpg");
         background-size: cover;
         background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
       }
       .images {
         display: flex;
@@ -20,6 +25,32 @@
         width: 300px;
         height: auto;
         border-radius: 10px;
+      }
+      .roll-in-left {
+        animation: roll-in-left 1.5s ease-out both;
+      }
+      .roll-in-right {
+        animation: roll-in-right 1.5s ease-out both;
+      }
+      @keyframes roll-in-left {
+        0% {
+          transform: translateX(-1000px) rotate(-720deg);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+      }
+      @keyframes roll-in-right {
+        0% {
+          transform: translateX(1000px) rotate(720deg);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
       }
     </style>
     <link rel="icon" type="image/png" href="./images/acs aro mcm.png" />
@@ -38,13 +69,13 @@
       <br />
       <div class="images">
         <div class="image">
-          <img src="./images/img1.jpg" alt="Image1" />
+          <img src="./images/img1.jpg" alt="Image1" class="roll-in-left" />
         </div>
         <div class="image">
-          <img src="./images/img2.jpg" alt="Image2" />
+          <img src="./images/img2.jpg" alt="Image2" class="roll-in-right" />
         </div>
         <div class="image">
-          <img src="./images/img3.jpg" alt="Image3" />
+          <img src="./images/img3.jpg" alt="Image3" class="roll-in-left" />
         </div>
       </div>
     </div>

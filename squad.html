@@ -10,6 +10,32 @@
         background-size: cover;
         background-position: center;
       }
+      .slide-in-bck-tr {
+        animation: slide-in-bck-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+      .slide-in-bck-tl {
+        animation: slide-in-bck-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+      @keyframes slide-in-bck-tr {
+        0% {
+          transform: translateZ(600px) translateX(300px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateZ(0) translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-bck-tl {
+        0% {
+          transform: translateZ(600px) translateX(-300px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateZ(0) translateX(0);
+          opacity: 1;
+        }
+      }
     </style>
     <link rel="icon" type="image/png" href="./images/acs aro mcm.png" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,7 +57,7 @@
           class="w-full"
         >
           <button
-            class="bg-green-500 text-black text-center py-4 rounded-lg shadow-md w-full"
+            class="bg-green-500 text-black text-center py-4 rounded-lg shadow-md w-full slide-in-bck-tr"
           >
             Defenders
           </button>
@@ -42,7 +68,7 @@
           class="w-full"
         >
           <button
-            class="bg-yellow-500 text-black text-center py-4 rounded-lg shadow-md w-full"
+            class="bg-yellow-500 text-black text-center py-4 rounded-lg shadow-md w-full slide-in-bck-tl"
           >
             Midfielders
           </button>
@@ -53,7 +79,7 @@
           class="w-full"
         >
           <button
-            class="bg-red-500 text-black text-center py-4 rounded-lg shadow-md w-full"
+            class="bg-red-500 text-black text-center py-4 rounded-lg shadow-md w-full slide-in-bck-tr"
           >
             Forwards
           </button>
