@@ -6,14 +6,29 @@
     <title>Photos</title>
     <style>
       body {
-        background-image: url("./images/background.jpg");
-        background-size: cover;
-        background-position: center;
+        position: relative;
+        margin: 0;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
-        margin: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Fallback for older browsers */
+      }
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("./images/grass-background.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.8; /* Adjust the opacity here */
+        z-index: -1; /* Ensure the pseudo-element is behind the content */
+      }
+      .content {
+        text-align: center;
       }
       .images {
         display: flex;
@@ -54,15 +69,15 @@
       }
     </style>
     <link rel="icon" type="image/png" href="./images/acs aro mcm.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <script type="module" src="./main.js"></script>
     <a href="#" onclick="window.location.href = 'index.html'">
       <button class="absolute top-4 left-4 p-2 rounded-full">
         <img src="./images/acs aro mcm.png" alt="homepage" class="w-6 h-8" />
       </button>
     </a>
-    <div class="w-full max-w-md px-4">
+    <div class="content">
       <div class="flex justify-center mt-8">
         <span class="text-lg font-bold">Photos</span>
       </div>

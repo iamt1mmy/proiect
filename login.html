@@ -6,13 +6,28 @@
     <title>Log In</title>
     <style>
       body {
-        background-image: url("./images/background.jpg");
+        position: relative;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("./images/grass-background.jpg");
         background-size: cover;
         background-position: center;
+        opacity: 0.8; /* Adjust the opacity here */
+        z-index: -1; /* Ensure the pseudo-element is behind the content */
       }
     </style>
     <link rel="icon" type="image/png" href="./images/acs aro mcm.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./main.js"></script>
   </head>
   <body class="min-h-screen flex items-center justify-center relative">
     <a href="#" onclick="window.location.href = 'index.html'"

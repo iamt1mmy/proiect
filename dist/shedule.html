@@ -6,52 +6,87 @@
     <title>Schedule</title>
     <style>
       body {
-        background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBUQEBAVFRUPDxUVFRUPFRUVFQ8VFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0NDysZFRkrKy0rKy0rKzc3NzctNy0rLS0tLTc3Ny0tNy0tLTc3NzctKy0tKy0rLSstKy0rLS0tLf/AABEIAMABBwMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAHxABAQEAAgMBAQEBAAAAAAAAAAERAgMSE1EEFCGB/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwX/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARIRAv/aAAwDAQACEQMRAD8A+n6er/P9jedE+Dpbx4/mPW9+qwn54udE+NsXxjpmOeqwn558VOifHRh4uU1XP/PPh/zz46CkXMTVYfzT4J+afHTAZhquafnnw/5p8dGGZhqub+afBPzT46gZhquf+efBeiOgGYarn9AvRG9K05Dtc/onwr0z43FTkXtc96IXojfSZ5F7WHogn543NORe1z380R/LNdWlach2ua/mhz80+N/IeSci9rm5flib+SOvyPTMNVw/yQuX458d4xcw3Xlcvwz4T1bwCYi7rk6o6Iz641kXzE904viUVHVzUacVIqHhGciokYrB4gR4eHIBYShQLAAgVKxRWoqcLFjGVZ+J+KqEVOFiyRUXiV4rCDLCxrU2Cs7AvB4gmVUwvErqjSQM4DqcTwjScU9bVfKeikVIDjpGDkOQRSoQVSgEDAAzAJJVGAnDM5EVGCxQxAoVGCoqQomWiGHDkQRhNMGHDrPBi8KiosLFJoEAYJ0ChFR18m8jHjG8rfln0ZwjjpGDkPAcEGDFQ1EeJ4rFYCD8VYMERYIssRUlTwkCoVhWJVRalp4leLNaSDJA1ROgFaEgDpYNCKVhXipNBF4liqmoowEaKng1jLrax18sejipEq1uMmpJxUUcTqpQVDKHBAYAhWFTpSIpFqsK8EVJzifiIilYlYRWeF4tBiDLBjUqis/EY0SCSqrCqKnSpiQVCa18SxBngXQKz6mqOtpa6Rj0ZxMVI3GVSHRIeCFIuQSKVBIeCQ8AAYQAjkPECxNWmxKqQdTyRRo0pAyo0aRgNKqw/EVEPD8TxBGBQBnYmcWhVOKyolXYm8UVN5BXgAR1T/GmI6mrrGKnFcS041GVSLkLjGkVCh4chiJ41afFcgEnFgEyGacRQWHeJYgmxOLCNI8S8V6EEXifioAWEdMEnplUVIvFWAE4WGXkA/4mxZVFRhihFYdTRh1cm2txn0cXOLPWvCtRmqkXEqjSKhlFCDQcAAGIBUKCCBigiokKxZYCcF4qwIqMKKsLAIqrBiKkarABYMMQE3iWLwhUWDFFgJsBhBw9LWMOit4sWq4xpIji24tRmnxjSREXFZM8A1UGGIYAyMQQEKiigBAgKNFLQNCBYBgkFCdVhXigRHheIolHkPEeAHORWnhAkKTRUg8JBwdLojn/ADurjxIvpXGK48ixXGNMNIqVBxpF6NScEVDSYGNIAoEYEDJAAGKRkEBRgADBgAFSsOkKBpDEBpGmigqdTQAICuLo4uri5+qunjWfK+jVCGtsGqIVqoeiUhAaSjUSjyOnF6WolPTpxcovJGinTi/IagadOLlPWei1Bpo1no1Rppam8k2oNNLUaNFXo1OiVBWlqdK8kFaLUXkXkKrQnSvIijlQx7OYOnGXTXRxrz+nudPHuc/Pp09eXVKqVzzuOdzpqOeXRpuf3H7l1DNbjWHuL3Goma6CYe4e5NRc1vo1z+0XuNGa309c/uOdxqGW41j7S9xqGa209c97h7TUM1tpyubl2j2mjLp0a5vePcahmujVRz+453w1DNdGkx9qfcahmt6TH3D2JqGa1pMvaL2pqLmtaiovYz5diX0uafZTc/Z3Bi+m55r/2Q==");
-        background-size: cover;
-        background-position: center;
-        font-family: Arial, sans-serif;
-        color: black;
-        text-align: center;
-        padding: 20px;
+        position: relative;
+        margin: 0;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5); /* Fallback for older browsers */
+      }
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("./assets/grass-background-tPNdTHEb.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.8; /* Adjust the opacity here */
+        z-index: -1; /* Ensure the pseudo-element is behind the content */
+      }
+      h1 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: black;
+      }
+      .match-list {
+        max-width: 400px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      .match {
+        margin: 10px 0;
+        padding: 15px;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .match:hover {
+        background-color: rgba(200, 200, 200, 0.8);
       }
     </style>
     <link rel="icon" type="image/png" href="./assets/acs%20aro%20mcm-D3YswN3q.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" crossorigin src="./assets/main-FlGhhrzc.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-Dax5WAcZ.css">
   </head>
-  <body>
+  <body>
     <a href="index.html" class="absolute top-4 left-4 p-2 rounded-full">
       <img src="./assets/acs%20aro%20mcm-D3YswN3q.png" alt="homepage" class="w-6 h-8" />
     </a>
     <h1><strong>Schedule</strong></h1>
-    <div class="match-list max-w-md mx-auto p-4 rounded-lg">
+    <div>
       <a
         href="#"
-        class="block match m-2 p-4 border-2 border-black rounded-lg bg-white bg-opacity-80 hover:bg-opacity-60 transition"
+        class="block match"
         onclick="alert('Match Details:\nOpponent: Speed Academy\nDate: 22-11-2024\nTime: 11:30 AM\nLocation: Home')"
       >
         <p><strong>Date:</strong> 22-11-2024</p>
       </a>
       <a
         href="#"
-        class="block match m-2 p-4 border-2 border-black rounded-lg bg-white bg-opacity-80 hover:bg-opacity-60 transition"
+        class="block match"
         onclick="alert('Match Details:\nOpponent: CS Unirea Bascov\nDate: 25-11-2024\nTime: 3:00 PM\nLocation: Away')"
       >
         <p><strong>Date:</strong> 25-11-2024</p>
       </a>
       <a
         href="#"
-        class="block match m-2 p-4 border-2 border-black rounded-lg bg-white bg-opacity-80 hover:bg-opacity-60 transition"
+        class="block match"
         onclick="alert('Match Details:\nOpponent: CSM Jiul Petrosani\nDate: 28-11-2024\nTime: 10:00 PM\nLocation: Home')"
       >
         <p><strong>Date:</strong> 28-11-2024</p>
       </a>
       <a
         href="#"
-        class="block match m-2 p-4 border-2 border-black rounded-lg bg-white bg-opacity-80 hover:bg-opacity-60 transition"
+        class="block match"
         onclick="alert('Match Details:\nOpponent: Sparta Ramnicu Valcea\nDate: 02-12-2024\nTime: 11:00 AM\nLocation: Away')"
       >
         <p><strong>Date:</strong> 02-12-2024</p>

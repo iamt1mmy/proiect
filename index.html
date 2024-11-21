@@ -6,9 +6,24 @@
     <title>ACS ARO MUSCELUL CAMPULUNG MUSCEL</title>
     <style>
       body {
-        background-image: url("./images/background.jpg");
+        position: relative;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("./images/grass-background.jpg");
         background-size: cover;
         background-position: center;
+        opacity: 0.8; /* Adjust the opacity here */
+        z-index: -1; /* Ensure the pseudo-element is behind the content */
       }
       .text-container {
         background-color: black;
@@ -28,35 +43,35 @@
       <nav class="flex justify-center space-x-3 py-4">
         <a
           href="#"
-          class="text-blue-600 hover:underline"
+          class="text-black-600 hover:underline"
           onclick="window.location.href = 'login.html'"
         >
           Log In
         </a>
         <a
           href="#"
-          class="text-blue-600 hover:underline"
+          class="text-black-600 hover:underline"
           onclick="window.location.href = 'squad.html'"
         >
           Squad
         </a>
         <a
           href="#"
-          class="text-blue-600 hover:underline"
+          class="text-black-600 hover:underline"
           onclick="window.location.href = 'shedule.html'"
         >
           Shedule
         </a>
         <a
           href="#"
-          class="text-blue-600 hover:underline"
+          class="text-black-600 hover:underline"
           onclick="window.location.href = 'photos.html'"
         >
           Photos
         </a>
         <a
           href="#"
-          class="text-blue-600 hover:underline"
+          class="text-black-600 hover:underline"
           onclick="window.location.href = 'aboutus.html'"
         >
           About Us
