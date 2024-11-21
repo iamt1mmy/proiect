@@ -22,19 +22,13 @@
         background-image: url("./assets/grass-background-tPNdTHEb.jpg");
         background-size: cover;
         background-position: center;
-        opacity: 0.8; /* Adjust the opacity here */
-        z-index: -1; /* Ensure the pseudo-element is behind the content */
+        opacity: 0.8;
+        z-index: -1;
       }
       .header {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
-      }
-      .players {
-        display: grid;
-        grid-template-columns: repeat(2, 130px);
-        grid-gap: 20px;
-        justify-content: center;
       }
       .player {
         display: flex;
@@ -56,20 +50,20 @@
       }
     </style>
     <link rel="icon" type="image/png" href="./assets/acs%20aro%20mcm-D3YswN3q.png" />
-    <script type="module" crossorigin src="./assets/main-FlGhhrzc.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-Dax5WAcZ.css">
+    <script type="module" crossorigin src="./assets/main-BNIUPrGe.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-BXiJo79a.css">
   </head>
   <body class="min-h-screen flex flex-col items-center justify-center">
     <a href="#" onclick="window.location.href = 'index.html'">
       <button class="absolute top-4 left-4 p-2 rounded-full">
-        <img src="./assets/acs%20aro%20mcm-D3YswN3q.png" alt="homepage" class="w-6 h-8" />
+        <img src="./assets/acs%20aro%20mcm-D3YswN3q.png" alt="homepage" class="w-12 h-18 sm:w-14 sm:h-18 md:w-16 md:h-20 lg:w-18 lg:h-22 xl:w-20 xl:h-24 2xl:w-22 2xl:h-26" />
       </button>
     </a>
-    <div class="w-full max-w-md px-4">
+    <div class="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl px-4">
       <div class="flex justify-center mb-8">
-        <span class="text-lg font-bold">Forwards</span>
+        <span class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">Forwards</span>
       </div>
-      <div class="players">
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 justify-items-center">
         <div class="player">
           <img src="./assets/for1-aGHChxBD.jpg" alt="Player1" />
           <div>Bobi Grancea</div>

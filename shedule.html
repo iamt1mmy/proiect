@@ -45,7 +45,6 @@
         padding: 15px;
         border: 2px solid black;
         border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.8);
         cursor: pointer;
         transition: background-color 0.3s;
       }
@@ -57,11 +56,13 @@
   </head>
   <body>
     <script type="module" src="./main.js"></script>
-    <a href="index.html" class="absolute top-4 left-4 p-2 rounded-full">
-      <img src="./images/acs aro mcm.png" alt="homepage" class="w-6 h-8" />
+    <a href="#" onclick="window.location.href = 'index.html'">
+      <button class="absolute top-4 left-4 p-2 rounded-full">
+        <img src="./images/acs aro mcm.png" alt="homepage" class="w-12 h-18 sm:w-14 sm:h-18 md:w-16 md:h-20 lg:w-18 lg:h-22 xl:w-20 xl:h-24 2xl:w-22 2xl:h-26" />
+      </button>
     </a>
-    <h1><strong>Schedule</strong></h1>
-    <div>
+    <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold"><strong>Schedule</strong></h1>
+    <div class="match-list">
       <a
         href="#"
         class="block match"

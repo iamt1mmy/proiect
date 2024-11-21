@@ -22,8 +22,8 @@
         background-image: url("./images/grass-background.jpg");
         background-size: cover;
         background-position: center;
-        opacity: 0.8; /* Adjust the opacity here */
-        z-index: -1; /* Ensure the pseudo-element is behind the content */
+        opacity: 0.8;
+        z-index: -1;
       }
       .text-container {
         background-color: black;
@@ -43,35 +43,35 @@
       <nav class="flex justify-center space-x-3 py-4">
         <a
           href="#"
-          class="text-black-600 hover:underline"
+          class="text-black hover:underline"
           onclick="window.location.href = 'login.html'"
         >
           Log In
         </a>
         <a
           href="#"
-          class="text-black-600 hover:underline"
+          class="text-black hover:underline"
           onclick="window.location.href = 'squad.html'"
         >
           Squad
         </a>
         <a
           href="#"
-          class="text-black-600 hover:underline"
+          class="text-black hover:underline"
           onclick="window.location.href = 'shedule.html'"
         >
           Shedule
         </a>
         <a
           href="#"
-          class="text-black-600 hover:underline"
+          class="text-black hover:underline"
           onclick="window.location.href = 'photos.html'"
         >
           Photos
         </a>
         <a
           href="#"
-          class="text-black-600 hover:underline"
+          class="text-black hover:underline"
           onclick="window.location.href = 'aboutus.html'"
         >
           About Us
@@ -81,9 +81,11 @@
         <img
           src="./images/acs aro mcm.png"
           alt="ACS ARO MUSCELUL CAMPULUNG MUSCEL"
-          class="w-48 h-auto mb-4"
+          class="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 2xl:w-72 h-auto mb-4"
         />
-        <div class="text-container">ACS ARO MUSCELUL CAMPULUNG MUSCEL</div>
+        <div class="text-container text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+          ACS ARO MUSCELUL CAMPULUNG MUSCEL
+        </div>
       </div>
     </div>
   </body>
