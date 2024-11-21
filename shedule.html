@@ -3,25 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shedule</title>
+    <title>Schedule</title>
     <style>
       body {
         background-image: url("./images/background.jpg");
         background-size: cover;
         background-position: center;
+        font-family: Arial, sans-serif;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+      }
+      h1 {
+        margin-bottom: 40px;
       }
     </style>
     <link rel="icon" type="image/png" href="./images/acs aro mcm.png" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <a href="#" onclick="window.location.href = 'index.html'"
-      ><button class="absolute top-4 left-4 p-2 rounded-full">
-        <img
-          src="./images/acs aro mcm.png"
-          alt="homepage"
-          class="w-6 h-8"
-        /></button
-    ></a>
+    <a href="index.html" class="absolute top-4 left-4 p-2 rounded-full">
+      <img src="./images/acs aro mcm.png" alt="homepage" class="w-6 h-8" />
+    </a>
+    <h1><strong>Schedule</strong></h1>
+    <div class="match-list max-w-md mx-auto p-4 rounded-lg">
+      <a
+        href="#"
+        class="block match m-2 p-4 border-2 border-black rounded-lg bg-white bg-opacity-80 hover:bg-opacity-60 transition"
+        onclick="alert('Match Details:\nDate: 22-11-2024\nOpponent: Team A\nLocation: Home')"
+      >
+        <p><strong>Date:</strong> 22-11-2024</p>
+        <p><strong>Opponent:</strong> Team A</p>
+        <p><strong>Location:</strong> Home</p>
+      </a>
+      <a
+        href="#"
+        class="block match m-2 p-4 border-2 border-black rounded-lg bg-white bg-opacity-80 hover:bg-opacity-60 transition"
+        onclick="alert('Match Details:\nDate: 25-11-2024\nOpponent: Team B\nLocation: Away')"
+      >
+        <p><strong>Date:</strong> 25-11-2024</p>
+        <p><strong>Opponent:</strong> Team B</p>
+        <p><strong>Location:</strong> Away</p>
+      </a>
+      <a
+        href="#"
+        class="block match m-2 p-4 border-2 border-black rounded-lg bg-white bg-opacity-80 hover:bg-opacity-60 transition"
+        onclick="alert('Match Details:\nDate: 28-11-2024\nOpponent: Team C\nLocation: Home')"
+      >
+        <p><strong>Date:</strong> 28-11-2024</p>
+        <p><strong>Opponent:</strong> Team C</p>
+        <p><strong>Location:</strong> Home</p>
+      </a>
+    </div>
   </body>
 </html>
