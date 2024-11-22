@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Photos</title>
+    <title>Galerie</title>
     <style>
       body {
         position: relative;
@@ -12,7 +12,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.5); /* Fallback for older browsers */
+        background-color: rgba(0, 0, 0, 0.5);
       }
       body::before {
         content: "";
@@ -24,20 +24,19 @@
         background-image: url("./assets/grass-background-tPNdTHEb.jpg");
         background-size: cover;
         background-position: center;
-        opacity: 0.8; /* Adjust the opacity here */
-        z-index: -1; /* Ensure the pseudo-element is behind the content */
+        opacity: 0.8;
+        z-index: -1;
       }
       .content {
         text-align: center;
       }
       .images {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         align-items: center;
       }
       .image img {
-        width: 100%; /* Make images responsive */
+        width: 100%;
         height: auto;
         border-radius: 10px;
       }
@@ -67,10 +66,41 @@
           opacity: 1;
         }
       }
+      
+      @media (min-width: 640px) {
+        /* sm */
+        .images {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (min-width: 768px) {
+        /* md */
+        .images {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 1024px) {
+        /* lg */
+        .images {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 1280px) {
+        /* xl */
+        .images {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 1536px) {
+        /* 2xl */
+        .images {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
     </style>
     <link rel="icon" type="image/png" href="./assets/acs%20aro%20mcm-D3YswN3q.png" />
-    <script type="module" crossorigin src="./assets/main-BNIUPrGe.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-BXiJo79a.css">
+    <script type="module" crossorigin src="./assets/main-D5Jpl9D3.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-D4J6toSb.css">
   </head>
   <body>
     <a href="#" onclick="window.location.href = 'index.html'">
@@ -85,7 +115,7 @@
     <div class="content">
       <div class="flex justify-center mt-8">
         <span class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold"
-          >Photos</span
+          >Galerie</span
         >
       </div>
       <br />
