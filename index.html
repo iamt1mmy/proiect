@@ -25,6 +25,55 @@
         opacity: 0.8;
         z-index: -1;
       }
+      nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: transparent;
+        z-index: 100;
+      }
+      .menu-btn {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        background: black;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+        border-radius: 4px;
+        z-index: 200;
+      }
+      .menu-panel {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease-in-out;
+        z-index: 150;
+      }
+      .menu-panel.active {
+        transform: translateX(-300px);
+      }
+      .menu-panel a {
+        color: white;
+        text-decoration: none;
+        padding: 1rem 0;
+        border-bottom: 1px solid #333;
+        margin-bottom: 1rem;
+      }
+      .menu-panel a:hover {
+        color: #ccc;
+      }
       .text-container {
         background-color: black;
         color: white;
@@ -33,63 +82,43 @@
         text-align: center;
         white-space: nowrap;
       }
-      nav {
-        background-color: black; /* Adaugă fundal negru pentru bara de navigare */
-      }
     </style>
     <link rel="icon" type="image/png" href="./images/acs aro mcm.png" />
   </head>
 
   <body>
     <script type="module" src="./main.js"></script>
-    <div class="min-h-screen flex flex-col">
-      <nav class="flex justify-center space-x-3 py-4">
-        <a
-          href="#"
-          class="text-white hover:underline"
-          onclick="window.location.href = 'login.html'"
-        >
-          Log In
-        </a>
-        <a
-          href="#"
-          class="text-white hover:underline"
-          onclick="window.location.href = 'squad.html'"
-        >
-          Echipa
-        </a>
-        <a
-          href="#"
-          class="text-white hover:underline"
-          onclick="window.location.href = 'shedule.html'"
-        >
-          Program
-        </a>
-        <a
-          href="#"
-          class="text-white hover:underline"
-          onclick="window.location.href = 'photos.html'"
-        >
-          Galerie
-        </a>
-        <a
-          href="#"
-          class="text-white hover:underline"
-          onclick="window.location.href = 'aboutus.html'"
-        >
-          Informatii
-        </a>
-      </nav>
-      <div class="flex flex-col items-center justify-center flex-grow">
-        <img
-          src="./images/acs aro mcm.png"
-          alt="ACS ARO MUSCELUL CAMPULUNG MUSCEL"
-          class="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 2xl:w-72 h-auto mb-4"
-        />
-        <div class="text-container text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-          ACS ARO MUSCELUL CAMPULUNG MUSCEL
-        </div>
+
+    <!-- Navbar -->
+    <nav>
+      <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+      <div class="menu-panel" id="menu-panel">
+        <a href="login.html">Log In</a>
+        <a href="squad.html">Echipa</a>
+        <a href="shedule.html">Program</a>
+        <a href="photos.html">Galerie</a>
+        <a href="aboutus.html">Informatii</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="min-h-screen flex flex-col items-center justify-center">
+      <img
+        src="./images/acs aro mcm.png"
+        alt="ACS ARO MUSCELUL CAMPULUNG MUSCEL"
+        class="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 2xl:w-72 h-auto mb-4"
+      />
+      <div class="text-container text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+        ACS ARO MUSCELUL CAMPULUNG MUSCEL
       </div>
     </div>
+
+    <!-- Script pentru meniul lateral -->
+    <script>
+      function toggleMenu() {
+        const menuPanel = document.getElementById("menu-panel");
+        menuPanel.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
